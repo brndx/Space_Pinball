@@ -13,5 +13,4 @@ public class Pod : MonoBehaviour {
          * deltaTime (change in time) ensures that the same speed is maintained independent of frame rate.*/
         transform.Translate(0,-0.2f*Time.deltaTime,0); 
 	}
-    // GOTTA GO FAST!
 }
