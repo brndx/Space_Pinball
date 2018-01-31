@@ -282,16 +282,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <Compile Include="Assets\Source\CommitThis.cs" />
-=======
-    <Compile Include="Assets\Source\PleaseDelete.cs" />
->>>>>>> cabce9e39b360d9971f9d7e8cb88556ebde9c3b6
-=======
->>>>>>> parent of cabce9e... PleaseRevertAllTheseChanges
     <Compile Include="Assets\Source\Pod.cs" />
-    <Compile Include="Assets\Source\TerryScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
