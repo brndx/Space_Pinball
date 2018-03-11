@@ -3,14 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pod : MonoBehaviour {
+public class Pod : MonoBehaviour
+{
+    public Vector2 velocity;
+    
+    public Rigidbody2D rb2D;
 
-	void Start () {
-	}
+    void Start()
+    {
+        rb2D = GetComponent<Rigidbody2D>();
+    }
 
-    void Update () {
-        /* Moves down 0.2 units every frame.
-         * deltaTime (change in time) ensures that the same speed is maintained independent of frame rate.*/
-        transform.Translate(0,-0.2f*Time.deltaTime,0); 
-	}
+    void Update()
+    {
+        if (Input.GetKey("w"))
+        {
+            rb2D.position = rb2D.position + velocity * Time.fixedDeltaTime;
+        }
+    }
 }
